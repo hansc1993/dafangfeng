@@ -1,0 +1,230 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+blockquote,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+pre,
+form,
+fieldset,
+legend,
+button,
+input,
+textarea {
+  margin: 0;
+  padding: 0;
+  font-family: "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei", "微软雅黑", 'Segoe UI', Tahoma, "宋体b8b\4f53", SimSun, sans-serif;
+  font-size: 14px;
+  color: #222;
+}
+th,
+td {
+  font-size: 12px;
+}
+body,
+button,
+input,
+select,
+textarea {
+  color: #222;
+  line-height: 1.5;
+  border: 0;
+  outline: 0;
+}
+address,
+cite,
+dfn,
+em,
+var {
+  font-style: normal;
+}
+code,
+kbd,
+pre,
+samp {
+  font-family: courier new, courier, monospace;
+}
+small {
+  font-size: 12px;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  -webkit-transition: color .2s linear;
+  -moz-transition: color .2s linear;
+  -ms-transition: color .2s linear;
+  -o-transition: color .2s linear;
+  transition: color 0.2s linear;
+}
+a:link,
+a:visited {
+  text-decoration: none;
+  outline: 0;
+}
+a:hover,
+a:active {
+  text-decoration: none;
+  outline: 0;
+}
+sup {
+  vertical-align: text-top;
+}
+sub {
+  vertical-align: text-bottom;
+}
+legend {
+  color: #000;
+}
+fieldset,
+img {
+  border: 0;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* new clearfix */
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+* html .clearfix {
+  zoom: 1;
+}
+/* IE6 */
+*:first-child + html .clearfix {
+  zoom: 1;
+}
+/* IE7 */
+.layoutfix {
+  display: inline-block;
+}
+.layoutfix {
+  display: block;
+  overflow: hidden;
+}
+.basefix {
+  *zoom: 1;
+}
+.basefix:after {
+  clear: both;
+  content: '.';
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+/* 常用css样式 */
+.hide {
+  display: none !important;
+  overflow: hidden;
+}
+.show {
+  display: block;
+  overflow: visible;
+}
+/* 分割线 */
+hr.hr-slip {
+  display: block;
+  margin: 20px 0;
+  border: 0;
+  height: 0;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #ffffff;
+}
+/*超长文字截断*/
+.ellipsis {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+/*左右浮动*/
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.bold {
+  font-weight: bold;
+}
+/*------------- S common css  自定义 ST -------------*/
+.f-left {
+  float: left;
+}
+.f-right {
+  float: right;
+}
+.clearfix::after,
+.clearfix::before {
+  content: ".";
+  line-height: 0;
+  height: 0;
+  display: block;
+  visibility: hidden;
+  clear: both;
+}
+.hide {
+  display: none;
+}
+/*------------- S common css  自定义 ED -------------*/
+/********************* 公共样式 *********************/
+input[type='number']::-webkit-textfield-decoration-container {
+  background-color: #fff !important;
+}
+input[type='number']::-webkit-inner-spin-button {
+  -webkit-appearance: none !important;
+}
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none !important;
+}
+.commonHead {
+  font-size: 14px;
+}
+.commonHead .el-row {
+  padding: 10px;
+}
+.commonHead .el-col-5 {
+  text-align: right;
+}
+/* 按钮样式 */
+.mainBtnStyle .el-button--primary {
+  line-height: 0;
+  background-color: #3f85ca !important;
+  border: 1px solid #3f85ca;
+  height: 35px;
+}
+.mainBtnStyle .el-button--primary span {
+  color: #fff !important;
+}
+/* 按钮行样式 */
+.btnLineStyle {
+  padding-left: 30px !important;
+}
+.btnLineStyle .lineDisplay {
+  display: inline-block;
+  text-align: left;
+}
+.btnLineStyle .lineDisplay:nth-child(2n) {
+  margin: 0 7px;
+}
